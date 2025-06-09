@@ -36,11 +36,16 @@ FEISHU_WEBHOOK=你的飞书机器人Webhook地址
 
 ### 2. 应用配置
 
-配置文件 `config.json` 包含以下设置：
+复制配置模板并修改：
+```bash
+cp config.template.json config.json
+```
+
+然后编辑 `config.json` 文件，主要配置：
 - `chatlog_api_base`: 聊天日志API地址
 - `deepseek_base_url`: DeepSeek API基础URL  
 - `deepseek_model`: 使用的DeepSeek模型
-- `talkers`: 需要处理的群组列表
+- `talkers`: **需要处理的群组列表（替换为你的实际群组名称）**
 - `deepseek_config`: DeepSeek API参数配置
 
 ## 使用方法
@@ -79,7 +84,8 @@ python chatlog_bot.py
 ```
 ├── main.py                 # 定时调度主程序
 ├── chatlog_bot.py          # 聊天日志机器人核心模块
-├── config.json             # 配置文件
+├── config.json             # 配置文件 (需要自行创建)
+├── config.template.json    # 配置文件模板
 ├── .env                    # 环境变量文件 (需要自行创建)
 ├── env_template.txt        # 环境变量模板
 ├── requirements.txt        # Python依赖包
@@ -93,7 +99,8 @@ python chatlog_bot.py
 - 确保API服务正常运行
 - 检查网络连接和API密钥有效性
 - 飞书机器人需要有群组发送权限
-- 不要将 `.env` 文件提交到版本控制系统
+- **不要将 `.env` 和 `config.json` 文件提交到版本控制系统**
+- **`config.json` 包含群组名称等隐私信息，请妥善保管**
 - 定时调度程序需要保持运行状态才能在18:00自动执行
 - 日志文件按日期自动创建，存储在 `logs/` 目录中
 - 可以通过日志文件监控程序运行状态和排查问题

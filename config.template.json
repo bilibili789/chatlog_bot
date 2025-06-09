@@ -1,0 +1,14 @@
+{
+  "chatlog_api_base": "http://127.0.0.1:5030/api/v1/chatlog",
+  "deepseek_base_url": "https://api.siliconflow.cn",
+  "deepseek_model": "deepseek-ai/DeepSeek-V3",
+  "talkers": [
+    "群组名称1",
+    "群组名称2", 
+    "群组名称3"
+  ],
+  "deepseek_config": {
+    "temperature": 0.7,
+    "max_tokens": 2000
+  }
+} 
