@@ -26,13 +26,17 @@ cp env_template.txt .env
 ```
 
 然后编辑 `.env` 文件，设置你的API密钥和Webhook地址：
+
+
 ```env
-# DeepSeek API配置
+# DeepSeek API配置，先到https://siliconflow.cn申请一个 API密钥
 DEEPSEEK_API_KEY=你的DeepSeek API密钥
 
-# 飞书Webhook配置
+# 飞书Webhook配置，找到对应的飞书群，在设置里面的群机器人添加一个。
 FEISHU_WEBHOOK=你的飞书机器人Webhook地址
 ```
+
+
 
 ### 2. 应用配置
 
@@ -47,6 +51,8 @@ cp config.template.json config.json
 - `deepseek_model`: 使用的DeepSeek模型
 - `talkers`: **需要处理的群组列表（替换为你的实际群组名称）**
 - `deepseek_config`: DeepSeek API参数配置
+
+提示：群组的名称可以通过http://127.0.0.1:5030/api/v1/chatroom接口查询。
 
 ## 使用方法
 

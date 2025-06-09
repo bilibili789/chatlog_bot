@@ -9,7 +9,6 @@ config.json
 
 # 需求文档 (包含隐私信息)
 req.md
-req.md
 
 # Python
 __pycache__/
