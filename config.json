@@ -1,0 +1,14 @@
+{
+  "chatlog_api_base": "http://127.0.0.1:5030/api/v1/chatlog",
+  "deepseek_base_url": "https://api.siliconflow.cn",
+  "deepseek_model": "deepseek-ai/DeepSeek-V3",
+  "talkers": [
+    "哥飞的朋友们⑧",
+    "AI 零代码自动化1群-6月航海",
+    "AI 应用 - Web 网站1群-6月航海"
+  ],
+  "deepseek_config": {
+    "temperature": 0.7,
+    "max_tokens": 2000
+  }
+} 

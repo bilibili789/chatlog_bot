@@ -1,0 +1,5 @@
+# DeepSeek API配置
+DEEPSEEK_API_KEY=sk-gamockxxxxxxxahqzzyxxxxxxfrgpxasbdemoxxxx
+
+# 飞书Webhook配置
+FEISHU_WEBHOOK=https://open.feishu.cn/open-apis/bot/v2/hook/67xxxx10-1xxxx-45c3-81ce-xxxxxxx 
