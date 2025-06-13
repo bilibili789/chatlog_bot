@@ -12,9 +12,11 @@
 
 ## 安装依赖
 提示：为里面其他的包的影响，建议先在项目下建立一下虚拟环境在安装python包。
-如python -m venv venv
-
+以 MacOS 系统为例子：
+然后在虚拟环境中安装依赖
 ```bash
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
