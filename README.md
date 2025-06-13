@@ -11,6 +11,8 @@
 - 配置文件和环境变量分离，安全性更高
 
 ## 安装依赖
+提示：为里面其他的包的影响，建议先在项目下建立一下虚拟环境在安装python包。
+如python -m venv venv
 
 ```bash
 pip install -r requirements.txt
