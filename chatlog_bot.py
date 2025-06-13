@@ -81,14 +81,9 @@ class ChatLogBot:
             
             if response.status_code == 200:
                 if response.text.strip():
-                    # 首先尝试解析为JSON
-                    try:
-                        return response.json()
-                    except json.JSONDecodeError as je:
-                        self.logger.info(f"不是JSON格式，作为纯文本处理")
-                        self.logger.debug(f"文本内容预览: {self.truncate_text(response.text, 200)}")
-                        # 如果不是JSON，直接返回文本内容
-                        return response.text.strip()
+                    self.logger.info(f"chatlog默认返回格式为文本类型，作为纯文本处理")
+                    self.logger.debug(f"文本内容预览: {self.truncate_text(response.text, 200)}")
+                    return response.text.strip()
                 else:
                     self.logger.warning("响应内容为空")
                     return None
